@@ -116,9 +116,7 @@ function App() {
           {isLoading ? "Loading..." : "Send"}
         </button>
       </div>
-      {isLoading && (
-        <p className="loading-message">Processing your request...</p>
-      )}
+      {isLoading && <img src="ripples.svg" style={{ width: "75px" }} alt="" />}
       {response && <div className="response-container">{response}</div>}
     </div>
   );
